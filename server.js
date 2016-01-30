@@ -51,4 +51,4 @@ app.get("/api/users", function (req, res) {
 var server = http.createServer(app);
 
 // had ook net zo goed 80 kunnen zijn
-server.listen(3000);
+server.listen(process.env.EXPRESS_PORT || 3000);
