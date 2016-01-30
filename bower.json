@@ -1,0 +1,25 @@
+{
+  "name": "TheBoard",
+  "description": "A message board based on sticky notes",
+  "main": "server.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "underscore": "^1.8.3"
+  }
+}
