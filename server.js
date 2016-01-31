@@ -1,5 +1,6 @@
 ﻿var http			= require("http");
 var env				= require('env');
+var config			= require('./config.js');
 var express			= require("express");
 var session			= require("express-session");
 var cookies			= require("cookie-parser");
@@ -14,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookies());
 app.use(session({
-	secret: 'what a happy sunny day', //well, not so secret 
+	secret: config.sessionSecret,
 	saveUninitialized: false,
 	resave: true
 }));

@@ -1,7 +1,9 @@
 ﻿(function (database) {
 	
 	var mongodb = require('mongodb');
-	var mongoUrl = "mongodb://localhost:27017/theBoard"; // db is created when called
+	var config	= require('../config.js');
+	
+	var mongoUrl = config.connectionString; // db is created when called
 	var theDb = null;
 
 	database.getDb = function (next) {

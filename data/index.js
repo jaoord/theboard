@@ -1,7 +1,7 @@
 ﻿(function (data) {
 	
-	var seedData = require('./seedData');
-	var database = require('./database');
+	var seedData = require('./seedData.js');
+	var database = require('./database.js');
 
 	data.getNoteCategories = function (next) {
 		database.getDb(function (err, db) {

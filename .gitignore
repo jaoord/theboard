@@ -35,3 +35,4 @@ public/lib
 .ntvs_analysis.dat
 gruntfile.js
 .vs/config/applicationhost.config
+config.js

@@ -1,0 +1,6 @@
+﻿var config = {};
+
+config.sessionSecret	= '';
+config.connectionString = '';
+
+module.exports = config;
