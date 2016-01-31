@@ -14,10 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookies());
 app.use(session({
-	/*genid: function (req) {
-		return genuuid()
-	},*/
-	secret: 'what a happy sunny day',
+	secret: 'what a happy sunny day', //well, not so secret 
 	saveUninitialized: false,
 	resave: true
 }));
@@ -32,17 +29,6 @@ controllers.init(app);
 app.set('view engine', 'vash');
 
 
-app.get('/api/sql', function (req, res) {
-	var msnodesql = require('msnodesqlv8');
-	var connString = 'Driver={SQL Server Native Client 11.0};Server=.\\SQL14;Database=FWP;Uid=fwp;Pwd=fwp;MultipleActiveResultSets=true';
-
-	msnodesql.query(connString, "SELECT * FROM Client WHERE ClientId < 10", function (err, results) {
-		console.log(err);
-		res.send(results);
-	});
-});
-
-
 app.get("/api/users", function (req, res) {
 	res.set("Content-Type", "application/json");
 	res.send({ name: "Jogchem", isValid: true, group: "Monkeys" });
@@ -50,9 +36,7 @@ app.get("/api/users", function (req, res) {
 
 var server = http.createServer(app);
 
-var port = process.env.EXPRESS_PORT || 3000;
+var port = process.env.EXPRESS_PORT || 3000; // had ook net zo goed 80 kunnen zijn
 
 console.log('server will start on port ' + port);
-
-// had ook net zo goed 80 kunnen zijn
 server.listen(port);
