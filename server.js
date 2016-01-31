@@ -50,5 +50,9 @@ app.get("/api/users", function (req, res) {
 
 var server = http.createServer(app);
 
+var port = process.env.EXPRESS_PORT || 3000;
+
+console.log('server will start on port ' + port);
+
 // had ook net zo goed 80 kunnen zijn
-server.listen(process.env.EXPRESS_PORT || 3000);
+server.listen(port);
