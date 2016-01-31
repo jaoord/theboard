@@ -37,19 +37,29 @@
     <Compile Include="data\index.js" />
     <Compile Include="data\seedData.js" />
     <Compile Include="gruntfile.js" />
+    <Compile Include="public\js\notesView.js" />
     <Compile Include="server.js" />
     <Content Include=".bowerrc" />
+    <Content Include=".gitignore" />
+    <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="public\css\site.css" />
+    <Content Include="public\images\note-blue.png" />
+    <Content Include="public\images\note-green.png" />
+    <Content Include="public\images\note-orange.png" />
+    <Content Include="public\images\note-yellow.png" />
     <Content Include="README.md" />
     <Content Include="views\index.vash" />
     <Content Include="views\layout.vash" />
+    <Content Include="views\notes.vash" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controllers\" />
     <Folder Include="data\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\js\" />
     <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

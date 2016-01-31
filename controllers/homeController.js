@@ -27,9 +27,14 @@
 					res.redirect("/notes/" + categoryName);
 				}
 			});
-
 		});
-	};
+
+		app.get('/notes/:categoryName', function (req, res) {
+			var categoryName = req.params.categoryName;
+			res.render('notes', { title: categoryName });
+		});
+
+	}; // init
 
 })(module.exports); // anonieme functie die meteen wordt aangeroepen met module.exports als argument.
                     // homeController is nu dus eigenlijk hetzelfde als module.exports

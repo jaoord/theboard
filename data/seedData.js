@@ -23,20 +23,11 @@
 					color: "orange"
 				}]
 		}, {
-			name: "People",
-			notes: [{
-					note: "Jefferson was a President",
-					author: "Shawn Wildermuth",
-					color: "yellow"
-				}, {
-					note: "John Wayne was an actor",
-					author: "Shawn Wildermuth",
-					color: "blue"
-				}, {
-					note: "Reagan was a President and an actor.",
-					author: "Shawn Wildermuth",
-					color: "green"
-				}]
+			name: "Fartings",
+			notes: [{ note: 'hello world', color: 'yellow', author: 'wild Beest' },
+				{ note: 'Hi my schmuky monkey', color: 'blue', author: 'Mildly Carving' },
+				{ note: 'Tree hoppers are precious', color: 'green', author: 'Mike Thirsten' },
+				{ note: 'Last note', color: 'orange', author: 'Moar Year' }]
 		}];
 
 })(module.exports);
